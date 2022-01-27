@@ -6,7 +6,7 @@ Bienvenido al conversor de monedas
 3. Dolares a quetzales
 
 """
-opcion = (menu)
+opcion = input(menu)
 
 if opcion == '1':
     #Conversion de pesos colombianos a dolares 
@@ -35,3 +35,5 @@ elif opcion == '3':
     quetzales = round(dolares * valor_quetzal)
     quetzales = str(quetzales)
     print("Tienes Q"+quetzales+" Quetzales")
+else:
+    print('Selecciona una opcion valida')
