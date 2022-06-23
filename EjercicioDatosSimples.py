@@ -31,10 +31,10 @@ print(operacion)
 #print("La suma de los primeros numero enteros desde 1 hasta "+ str(entero) +" es "+ str(suma))
 
 # Calcular la masa corporal 
-#peso = float(input('Ingrese su peso en kg'))
-#altura = float(input('Ingrese su altura en metros'))
-#imc = round(peso/(altura**2),2)
-#print('Su masa corporal es de ' + str(imc))
+peso = float(input('Ingrese su peso en kg'))
+altura = float(input('Ingrese su altura en metros'))
+imc = round(peso/(altura**2),2)
+print('Su masa corporal es de ' + str(imc))
 
 # Calcular el cociente y resto de la division.
 #n = float(input('Ingresa el primer numero '))
