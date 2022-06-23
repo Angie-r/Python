@@ -3,6 +3,7 @@ from xml.dom.expatbuilder import InternalSubsetExtractor
 from pyrsistent import b
 
 
+
 print('Hola Mundo')
 
 # Imprimir un texto guardado en una variable
@@ -36,24 +37,33 @@ print(operacion)
 #print('Su masa corporal es de ' + str(imc))
 
 # Calcular el cociente y resto de la division.
-n = float(input('Ingresa el primer numero '))
-m = float(input('Ingresa el segundo numero '))
-c = round((n / m),2)
-r = n % m
-print('El cociente de la division es '+ str(c) + ' el resto es '+ str(r))
+#n = float(input('Ingresa el primer numero '))
+#m = float(input('Ingresa el segundo numero '))
+#c = round((n / m),2)
+#r = n % m
+#print('El cociente de la division es '+ str(c) + ' el resto es '+ str(r))
 
 # calculo de capital obtenido, segun cantidad a invertir, interes y numero de años.
-cantidad_invertir = int(input('Ingrese la cantidad que desea invertir Q'))
-interes = float(input('ingrese el % de interes anual '))
-años = int(input('ingrese la cantidad de años de inversion '))
-capital = (cantidad_invertir * (interes /100))* años
-print('La cantidad inicial ' + str(cantidad_invertir)+ 'con el interes del %'+ str(interes)+ 
-' con plazo de '+ str(años) + ' años, se obtiene un capital de Q'+ str(capital))
+#cantidad_invertir = int(input('Ingrese la cantidad que desea invertir Q'))
+#interes = float(input('ingrese el % de interes anual '))
+#años = int(input('ingrese la cantidad de años de inversion '))
+#capital = (cantidad_invertir * (interes /100))* años
+#print('La cantidad inicial ' + str(cantidad_invertir)+ 'con el interes del %'+ str(interes)+ 
+#' con plazo de '+ str(años) + ' años, se obtiene un capital de Q'+ str(capital))
 
 #jugueteria payasos 112g, muñecas 75g
-p = int(input('Ingres la cantidad de payasos vendidos '))
-m = int(input('Ingrese la cantidad de muñecas '))
-peso = (p * 112) + (m * 75)
-print('Se vendieron '+ str(p)+' payasos '+ str(m)+' muñecas, el paquete tiene un peso de '
- + str(peso)+ ' kg')
+#p = int(input('Ingres la cantidad de payasos vendidos '))
+#m = int(input('Ingrese la cantidad de muñecas '))
+#peso = (p * 112) + (m * 75)
+#print('Se vendieron '+ str(p)+' payasos '+ str(m)+' muñecas, el paquete tiene un peso de '
+# + str(peso)+ ' kg')
 
+# ahorro 4% anual calculo del primer, segundo y tercer año
+ahorro = float(input('Ingrese la cantidad inicial ahorrada '))
+interes = 0.04
+saldo = ahorro * (1 + interes)
+print('El interes sobre lo ahorrado en el primer año es '+ str(round(saldo,2)))
+saldo2 = saldo * (1 + interes)
+print('El interes sobre lo ahorrado en el segundo año es '+ str(round(saldo2,2)))
+saldo3 = saldo2 * (1+ interes)
+print('El interes sobre lo ahorrado en el tercer año es '+ str(round(saldo3,2)))
