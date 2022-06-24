@@ -67,3 +67,20 @@ saldo2 = saldo * (1 + interes)
 print('El interes sobre lo ahorrado en el segundo año es '+ str(round(saldo2,2)))
 saldo3 = saldo2 * (1+ interes)
 print('El interes sobre lo ahorrado en el tercer año es '+ str(round(saldo3,2)))
+
+#Barras de pan Q3.49 c/u. si no es del dia tiene descuento de 60%. programa que lea
+#las barras vendidas que no son del dia, luego mostrar el precio habitual, el descuento reali
+#y el coste final total
+
+barras_vendidas = int(input('Ingresa el no. de barras vendidas que no son del dia '))
+precio_normal = 3.49
+desc = 0.60
+
+venta = barras_vendidas + precio_normal
+print('El precio habitual es de Q'+ str(round(venta,2)))
+
+venta_desc = barras_vendidas * desc
+print('Se realiza descuento de %60 por no ser pan del dia, siendo un total de Q'
++ str(round(venta_desc,2)))
+
+
